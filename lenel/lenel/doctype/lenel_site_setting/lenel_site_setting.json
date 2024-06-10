@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Lenel-Site-Setting-{####}",
+ "creation": "2024-06-07 16:08:41.015680",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_name",
+  "password",
+  "directory_id",
+  "application_id",
+  "till_datetime",
+  "column_break_zkgj",
+  "api",
+  "host_ip",
+  "port",
+  "og_openaccess_tls",
+  "time_zone",
+  "section_break_cqsk",
+  "employee_id_field",
+  "column_break_durj",
+  "logtype_field",
+  "timestamp_field",
+  "section_break_duda",
+  "logtype_definition"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "User Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "directory_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Directory ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "application_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Application ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "till_datetime",
+   "fieldtype": "Datetime",
+   "label": "From Date",
+   "options": "True\nFalse"
+  },
+  {
+   "fieldname": "column_break_zkgj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "api",
+   "fieldtype": "Data",
+   "label": "API",
+   "reqd": 1
+  },
+  {
+   "fieldname": "host_ip",
+   "fieldtype": "Data",
+   "label": "Host IP",
+   "reqd": 1
+  },
+  {
+   "fieldname": "port",
+   "fieldtype": "Int",
+   "label": "Port",
+   "reqd": 1
+  },
+  {
+   "fieldname": "og_openaccess_tls",
+   "fieldtype": "Select",
+   "label": "OG OPENACCESS TLS",
+   "options": "True\nFalse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time_zone",
+   "fieldtype": "Select",
+   "label": "Time Zone",
+   "options": "\n-14\n-13\n-12\n-11\n-10\n-9\n-8\n-7\n-6\n-5\n-4\n-3\n-2\n-1\n+1\n+2\n+3\n+4\n+5\n+6\n+7\n+8\n+9\n+10\n+11",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_cqsk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_id_field",
+   "fieldtype": "Data",
+   "label": "Employee ID Field",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_durj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "logtype_field",
+   "fieldtype": "Data",
+   "label": "LogType Field",
+   "reqd": 1
+  },
+  {
+   "fieldname": "timestamp_field",
+   "fieldtype": "Data",
+   "label": "Timestamp Field",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_duda",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "logtype_definition",
+   "fieldtype": "Table",
+   "label": "LogType Definition",
+   "options": "LogType Definition",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-07 15:56:40.966820",
+ "modified_by": "Administrator",
+ "module": "Lenel",
+ "name": "Lenel Site Setting",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
