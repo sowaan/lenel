@@ -55,6 +55,15 @@ def send_checkins(all_events, device_id, log_type, timestamp, table, inout, utc_
                 if not check :
                     checkin_doc.insert()
 
+    shift_type_list = frappe.get_list("Shift Type")
+    res2 = now()
+    if shift_type_list :
+        for shift_type in shift_type_list :
+            shift_type_doc = frappe.get_doc("Shift Type",shift_type.name)
+            shift_type_doc.last_sync_of_checkin = res2
+            shift_type_doc.save()        
+
+
 
 
 def get_url(open_access_url, params="", url_type="instances"):
@@ -166,7 +175,7 @@ def get_checkins_from_scheduler() :
 
     lenel_sett_list = frappe.get_list("Lenel Site Setting")
 
-
+    res2 = now()
 
     if lenel_sett_list :
         for list in lenel_sett_list :
@@ -195,6 +204,7 @@ def get_checkins_from_scheduler() :
             res1 = get_logged_events(lenel_sett_doc.api, lenel_sett_doc.host_ip, lenel_sett_doc.port, lenel_sett_doc.application_id, lenel_sett_doc.user_name, lenel_sett_doc.password, lenel_sett_doc.og_openaccess_tls, session_token, till_datetime , lenel_sett_doc.employee_id_field, lenel_sett_doc.logtype_field, lenel_sett_doc.timestamp_field, logs_array, inout, utc_time )
             lenel_sett_doc.till_datetime = res1
             lenel_sett_doc.save()
+
 
 
 

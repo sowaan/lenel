@@ -94,7 +94,7 @@
    "fieldname": "time_zone",
    "fieldtype": "Select",
    "label": "Time Zone",
-   "options": "\n-14\n-13\n-12\n-11\n-10\n-9\n-8\n-7\n-6\n-5\n-4\n-3\n-2\n-1\n+1\n+2\n+3\n+4\n+5\n+6\n+7\n+8\n+9\n+10\n+11",
+   "options": "\n-14\n-13\n-12\n-11\n-10\n-9\n-8\n-7\n-6\n-5\n-4\n-3\n-2\n-1\n0\n+1\n+2\n+3\n+4\n+5\n+6\n+7\n+8\n+9\n+10\n+11",
    "reqd": 1
   },
   {
@@ -137,7 +137,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-07 15:56:40.966820",
+ "modified": "2024-07-02 15:51:16.416295",
  "modified_by": "Administrator",
  "module": "Lenel",
  "name": "Lenel Site Setting",
